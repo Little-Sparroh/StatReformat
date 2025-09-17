@@ -52,7 +52,7 @@ namespace StatReformatMod
                 return;
 
             if (DebugStatLogging.Value)
-                Logger.LogDebug($"ReformatStats raw for {__instance.APIName}: {text}");
+                //Logger.LogDebug($"ReformatStats raw for {__instance.APIName}: {text}");
 
             try
             {
@@ -90,11 +90,11 @@ namespace StatReformatMod
                 text = sb.ToString().TrimEnd();
 
                 if (DebugStatLogging.Value)
-                    Logger.LogDebug($"ReformatStats after for {__instance.APIName}: {text}");
+                    //Logger.LogDebug($"ReformatStats after for {__instance.APIName}: {text}");
             }
             catch (Exception ex)
             {
-                Logger.LogWarning($"ReformatStats: Failed for {__instance.APIName}: {ex.Message}");
+                //Logger.LogWarning($"ReformatStats: Failed for {__instance.APIName}: {ex.Message}");
             }
         }
 
@@ -108,7 +108,7 @@ namespace StatReformatMod
                 return;
 
             if (DebugStatLogging.Value)
-                Logger.LogDebug($"ReformatUIText raw {fieldName}: {currentText}");
+                //Logger.LogDebug($"ReformatUIText raw {fieldName}: {currentText}");
 
             try
             {
@@ -148,11 +148,11 @@ namespace StatReformatMod
                 textComponent.ForceMeshUpdate();
 
                 if (DebugStatLogging.Value)
-                    Logger.LogDebug($"ReformatUIText after {fieldName}: {reformattedText}");
+                    //Logger.LogDebug($"ReformatUIText after {fieldName}: {reformattedText}");
             }
             catch (Exception ex)
             {
-                Logger.LogWarning($"ReformatUIText: Failed for {fieldName}: {ex.Message}");
+                //Logger.LogWarning($"ReformatUIText: Failed for {fieldName}: {ex.Message}");
             }
         }
     }
